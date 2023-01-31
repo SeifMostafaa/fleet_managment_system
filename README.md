@@ -28,7 +28,7 @@
 
 #### POST /api/register (Public)
 
-* General:
+* General: Signing up a new user
 * Sample: `curl http://localhost:8000/api/register`
   * Message body:
     ```
@@ -58,11 +58,12 @@
            "message": "Email already exists"
       }
   ```
+* Make sure to use the token as Bearer authenticity token
 
 
 #### POST /api/login (Public)
 
-* General:
+* General: Logging an existing user
 * Sample: `curl http://localhost:8000/api/login`
 * Message body:
   ```
@@ -85,7 +86,7 @@
         "token": "3|toPW30ts9o9VJX6RdgRt3ivtXY7MX8QAu6rW9WD0"
     }
    ```
-
+* Make sure to use the token as Bearer authenticity token
 
 
 #### GET /api/trips (Authenticated)
